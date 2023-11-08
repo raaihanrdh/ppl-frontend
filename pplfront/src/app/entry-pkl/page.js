@@ -38,7 +38,7 @@ const EntryPkl = () => {
                       type="text"
                       id="statuspkl"
                       placeholder="Status PKL"
-                      className="input input-bordered w-full"
+                      className="input input-bordered bg-white shadow-md w-full"
                     />
                   </div>
                 </div>
@@ -51,7 +51,7 @@ const EntryPkl = () => {
                       type="text"
                       id="nilaipkl"
                       placeholder="Nilai PKL"
-                      className="input input-bordered w-full"
+                      className="input input-bordered bg-white shadow-md w-full"
                     />
                   </div>
                 </div>

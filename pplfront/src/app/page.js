@@ -46,21 +46,22 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-gray-200">
-      <div className="min-h-screen flex flex-col items-center justify-center bg-black-100">
-        <h1 className="text-black">Selamat Datang!</h1>
-        <div className="bg-white p-8 rounded shadow-xl">
-          <div className="flex flex-col">
-            <img
+    <div className="bg-base-100">
+      <div className="h-screen flex flex-col items-center  bg-black-100">
+        <h1 className="text-white pt-32 text-3xl">SELAMAT DATANG !</h1>
+        <div className=" bg-white w-[720px] h-[720px] mt-10 p-10  rounded-lg shadow-lg items-center justofy-center">
+          <div className="mt-5 ">
+        <img
               src="images/logo undip.png "
               alt="logo"
-              className="h-11 w-11"
+              className=" w-40 h-43 m-auto"
             ></img>
-            <h2 className="text-2xl font-bold mb-4 " style={{ color: "black" }}>
-              Login
-            </h2>
-          </div>
+            </div>
           {error && <span>{error}</span>}
+          
+          <div className="bg-white mt-5 p-10">
+            <div className="mb-5"><a className="text-3xl font-bold"> LOGIN </a></div>
+          
           <form onSubmit={handleLogin} action="">
             <div className="mb-4">
               <label
@@ -105,6 +106,7 @@ const Login = () => {
               Login
             </button>
           </form>
+          </div>
         </div>
       </div>
     </div>

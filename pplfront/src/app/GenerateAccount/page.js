@@ -114,14 +114,18 @@ const GenerateAcc = () => {
               >
                 Angkatan
               </label>
-              <input
-                type="text"
+              <select
                 id="angkatan"
-                placeholder="Angkatan"
                 className="input input-bordered w-full bg-white border-black text-black p-2"
                 value={formData.angkatan}
                 onChange={(e) => handleChange(e, "angkatan")}
-              />
+              >
+                <option value="">Pilih Angkatan</option>
+                <option value="2020">2022</option>
+                <option value="2021">2023</option>
+                <option value="2022">2024</option>
+                {/* Tambahkan opsi lain sesuai kebutuhan */}
+              </select>
             </div>
           </div>
 
@@ -189,14 +193,16 @@ const GenerateAcc = () => {
               >
                 Status
               </label>
-              <input
-                type="text"
+              <select
                 id="status"
-                placeholder="Status"
                 className="input input-bordered w-full bg-white border-black text-black p-2"
                 value={formData.status}
                 onChange={(e) => handleChange(e, "status")}
-              />
+              >
+                <option value="">Pilih Status</option>
+                <option value="Aktif">Aktif</option>
+                <option value="Tidak Aktif">Tidak Aktif</option>
+              </select>
             </div>
           </div>
 

@@ -34,7 +34,7 @@ const EntryIrs = () => {
       <Navbar />
       <main>
         <div className="m-10 container mx-auto bg-gray">
-          <h1 className="text-4xl font-semibold dark:text-black mt-5">
+          <h1 className="text-4xl font-semibold dark:text mt-5">
             Entry IRS
           </h1>
           <div className="flex mt-10 gap-10 bg-gray-300">
@@ -52,8 +52,8 @@ const EntryIrs = () => {
                 </div>
               </div>
             </div>
-            <div className="flex grow gap-10 bg-white border border-black shadow shadow-md p-6">
-              <div className="w-full h-full">
+            <div className="flex grow gap-10 bg-white border  rounded-lg shadow shadow-lg p-6">
+              <div className=" w-full h-full">
                 <div className="mb-4">
                   <label className="label" htmlFor="semesterStudi">
                     <span className="label-text text-black text text-2xl">
@@ -65,21 +65,22 @@ const EntryIrs = () => {
                       value={irsData ? irsData.irss.semesteraktif : ""}
                       type="text"
                       id="semesteraktif"
-                      className="input input-bordered w-full "
-                      disabled
+                      className="input input-bordered bg-white shadow-md w-full "
+                      
                     />
                   </div>
                 </div>
                 <div className="mb-4">
                   <label className="label" htmlFor="ipkSemester">
-                    <span className="label-text">IPK Semester</span>
+                    <span className="label-text text-black text-2xl
+                    ">IPK Semester</span>
                   </label>
                   <div className="input-box">
                     <input
                       value={irsData ? irsData.irss.semesteraktif : ""}
                       type="text"
                       id="ip"
-                      className="input input-bordered w-full"
+                      className="input input-bordered bg-white shadow-md w-full"
                       disabled
                     />
                   </div>

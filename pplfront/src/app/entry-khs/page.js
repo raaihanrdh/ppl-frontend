@@ -4,11 +4,11 @@ import Navbar from "../Component/navbar";
 
 const EntryIrs = () => {
   return (
-    <div className="flex-none h-screen bg-gray-300">
+    <div className="flex-none h-full bg-gray-300">
       <Navbar />
       <main>
         <div className="m-10 container mx-auto bg-gray">
-          <h1 className="text-4xl font-semibold dark:text-black mt-5">
+          <h1 className="text-4xl font-semibold shadow-lg dark:text-black mt-5">
             Entry KHS
           </h1>
           <div className="flex mt-10 gap-10 bg-gray-300">
@@ -26,7 +26,7 @@ const EntryIrs = () => {
                 </div>
               </div>
             </div>
-            <div className="flex grow gap-10 bg-white border border-black shadow shadow-md p-6">
+            <div className="flex grow gap-10 bg-white rounded-lg shadow shadow-lg p-6">
               <div className="w-full h-full">
                 <div className="mb-4">
                   <label className="label" htmlFor="semesterStudi">
@@ -39,7 +39,7 @@ const EntryIrs = () => {
                       type="text"
                       id="semesterStudi"
                       placeholder="IRS"
-                      className="input input-bordered w-full"
+                      className="input input-bordered bg-white shadow-md w-full"
                     />
                   </div>
                 </div>
@@ -52,7 +52,7 @@ const EntryIrs = () => {
                       type="text"
                       id="totalSKSSemester"
                       placeholder="IRS"
-                      className="input input-bordered w-full"
+                      className="input input-bordered bg-white shadow-md w-full"
                     />
                   </div>
                 </div>
@@ -65,7 +65,7 @@ const EntryIrs = () => {
                       type="text"
                       id="totalSKSKumulatif"
                       placeholder="IRS"
-                      className="input input-bordered w-full"
+                      className="input input-bordered bg-white shadow-md w-full"
                     />
                   </div>
                 </div>
@@ -78,7 +78,7 @@ const EntryIrs = () => {
                       type="text"
                       id="IPSemester"
                       placeholder="IRS"
-                      className="input input-bordered w-full"
+                      className="input input-bordered bg-white shadow-md w-full"
                     />
                   </div>
                 </div>
@@ -91,7 +91,7 @@ const EntryIrs = () => {
                       type="text"
                       id="IPKSemester"
                       placeholder="IRS"
-                      className="input input-bordered w-full"
+                      className="input input-bordered bg-white shadow-md w-full"
                     />
                   </div>
                   <div className="mb-10"> </div>
