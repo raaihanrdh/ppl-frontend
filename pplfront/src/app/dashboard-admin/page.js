@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import { useCookies } from "react-cookie";
+//import { Navbar } from "flowbite-react";
+import Navbar from "../Component/navbar";
 
 const Drawer = () => {
   const router = useRouter();
@@ -29,52 +31,19 @@ const Drawer = () => {
   const handleGenerateAccountClick = () => {
     router.push("/GenerateAccount");
   };
+ 
   return (
-    <div className="flex flex-1 bg-gray-200">
-      <div className="drawer w-max h-max">
-        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content w-24 ">
-          {/* Page content here */}
-          <label htmlFor="my-drawer" className="btn btn-primary drawer-button">
-            Open drawer
-          </label>
-        </div>
-        <div className="drawer-side">
-          <label
-            htmlFor="my-drawer"
-            aria-label="close sidebar"
-            className="drawer-overlay"
-          ></label>
-          <ul className="z-30 menu p-4 w-60 min-h-full bg-gray-400 text-base-content">
-            {/* Sidebar content here */}
-            <li>
-              <a className="text-black">Dashboard</a>
-            </li>
-            <li>
-              <a className="text-black" onClick={handleGenerateAccountClick}>
-                Generate Account
-              </a>
-            </li>
-            <li>
-              <a className="text-black">Manage Account</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="flex flex-col w-full">
-        <div className="p-3">
-          <a className="pl-2 mt-2 text-black">Dashboard</a>
-        </div>
-
-        <div className="w-max shadow-xl mx-auto ">
+    <div className="h-screen bg-gray-200">
+      <Navbar/>
+      <div className="flex-1 justify-center min-h-screen gap-10 bg-gray-200 m-10">
+        <div className="w-max shadow-lg mx-auto rounded-lg ">
           <div className="card-body mx-auto bg-white rounded-lg">
-            <h1>Operator</h1>
+            <h1 className="flex-1 text-xl">Operator</h1>
             <figure>
               <img
                 src="images/logo undip.png"
                 alt="logo"
-                className="h-11 w-11 rounded-full"
+                className="flex-1 h-32 w-26 rounded-full"
               />
             </figure>
 
@@ -92,19 +61,19 @@ const Drawer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mt-28 mr-20">
+        <div className="flex justify-center gap-10 mt-10">
           <div className="stats shadow bg-white">
             <div className="stat">
-              <div className="stat-title">Total Akun Mahasiswa Aktif</div>
-              <div className="stat-value">602</div>
+              <div className="stat-title">Mahasiswa Aktif</div>
+              <div className="stat-value text-center">602</div>
               <div className="stat-desc"></div>
             </div>
           </div>
 
           <div className="stats shadow bg-white">
             <div className="stat">
-              <div className="stat-title">Total Akun Dosen Aktif</div>
-              <div className="stat-value">32</div>
+              <div className="stat-title">Dosen Aktif</div>
+              <div className="stat-value text-center">32</div>
               <div className="stat-desc"></div>
             </div>
           </div>
@@ -112,7 +81,7 @@ const Drawer = () => {
           <div className="stats shadow bg-white">
             <div className="stat">
               <div className="stat-title">Akun Departemen</div>
-              <div className="stat-value">7</div>
+              <div className="stat-value text-center">7</div>
               <div className="stat-desc"></div>
             </div>
           </div>
